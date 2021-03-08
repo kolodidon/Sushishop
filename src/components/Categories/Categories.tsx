@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { categorySelector, setCategory } from '../../redux/filterSlice'
 
 type CategoriesPropsType = {
     items: Array<string>
 }
 
 const Categories: React.FC<CategoriesPropsType> = ({ items }) => {
-    const [activeItem, setActiveItem] = useState(0)
+    const dispatch = useDispatch()
+    const ActiveItem: number  = useSelector(categorySelector)
     return (
         <div className="categories">
             <ul>
@@ -14,8 +17,8 @@ const Categories: React.FC<CategoriesPropsType> = ({ items }) => {
                     items.map((item, index) =>
                         <li
                             key={`${item}_${index}`}
-                            className={(activeItem === index) ? 'active' : ''}
-                            onClick={() => setActiveItem(index)}
+                            className={(ActiveItem === index) ? 'active' : ''}
+                            onClick={() => dispatch(setCategory(index))}
                         >
                             {item}
                         </li>

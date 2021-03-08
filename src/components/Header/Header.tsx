@@ -5,7 +5,7 @@ import {CartButton} from '../'
 
 import Logo from '../../assets/img/sushi-logo.svg'
 
-const Header: React.FC = () => {
+const Header: React.FC<any> = (props) => {
     return (
         <div className="header">
             <div className="container">

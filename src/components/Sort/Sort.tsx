@@ -1,17 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { sortBySelector, setSortBy } from '../../redux/filterSlice'
 
 import SortArrow from '../../assets/img/sort-arrow.svg'
 
 type SortPropsType = {
-    items: Array<string>
+    items: Array<{name: string, type: string}>
 }
 
 const Sort: React.FC<SortPropsType> = ({ items }) => {
+
+    const dispatch = useDispatch()
+    const ActiveItem: string = useSelector(sortBySelector)
+
     const [isPopup, setPopup] = useState(false)
-    const [activeItem, setActiveItem] = useState(0)
     const sortRef = useRef<HTMLDivElement>(null)
-    const setActiveItemAndClosePopup = (item: number) => {
-        setActiveItem(item)
+    const setActiveItemAndClosePopup = (type: string) => {
+        dispatch(setSortBy(type))
         setPopup(!isPopup)
     }
     const handleClick = (e: MouseEvent) => {
@@ -28,7 +33,7 @@ const Sort: React.FC<SortPropsType> = ({ items }) => {
             <div className="sort__label" onClick={() => setPopup(!isPopup)}>
                 <img src={SortArrow} alt="Arrow" className={!isPopup ? 'rotated' : ''}/>
                 <b>Сортировка по:</b>
-                <span>{items[activeItem]}</span>
+                <span>{items.find((e) => e.type === ActiveItem)?.name}</span>
             </div>
             {
                 isPopup &&
@@ -38,11 +43,11 @@ const Sort: React.FC<SortPropsType> = ({ items }) => {
                             items &&
                             items.map((item, index) =>
                                 <li
-                                    key={`${item}_${index}`}
-                                    className={(activeItem === index) ? 'active' : ''}
-                                    onClick={() => setActiveItemAndClosePopup(index)}
+                                    key={`${item.type}_${index}`}
+                                    className={(ActiveItem === item.type) ? 'active' : ''}
+                                    onClick={() => setActiveItemAndClosePopup(item.type)}
                                 >
-                                    {item}
+                                    {item.name}
                                 </li>
                             )
                         }

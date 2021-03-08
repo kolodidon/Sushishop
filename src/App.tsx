@@ -1,29 +1,28 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect } from 'react'
+import { Route } from 'react-router'
+import { useSelector, useDispatch } from 'react-redux'
 
 import './scss/app.scss'
 
 import { Header } from './components'
 import { Home, Cart } from './pages'
-import { FetchSushi, SushiType} from './Api'
-
-import { Route } from 'react-router'
+import { FetchSushiThunk, sushiSelector, SushiStateType } from './redux/sushiSlice'
 
 const App: React.FC = () => {
-  const [sushi, setSushi] = useState<SushiType>()
-  useEffect(() => {
-    FetchSushi().then((data) => setSushi(data))
-  }, [])
+  const dispatch = useDispatch()
+  const { items, isLoading, error }: SushiStateType = useSelector(sushiSelector)
+  useEffect(() => { dispatch(FetchSushiThunk()) }, [dispatch])
   return (
     <div className="wrapper">
       <Header />
       <div className="content">
-        <Route path ='/' exact>
-          <Home items={sushi}/>
+        <Route path='/' exact>
+          <Home items={items} isLoading={isLoading} error={error} />
         </Route>
-        <Route path ='/cart' component={Cart}/>
+        <Route path='/cart' component={Cart} />
       </div>
     </div>
   );
 }
 
-export default App;
+export default App
