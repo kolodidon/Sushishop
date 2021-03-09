@@ -1,9 +1,7 @@
 import React from 'react'
-
 import { Categories, Sort, SushiList } from '../components'
 
 const Home: React.FC = () => {
-
     const categoryItems = ['Все', 'Мясные', 'Вегетерианские', 'Гриль', 'Острые', 'Закрытые']
     const sortItems = [{ name: 'популярности', type: 'popular' }, { name: 'цене', type: 'price' }, { name: 'алфавиту', type: 'alphabet' }]
     console.log ('Home rerendered!')

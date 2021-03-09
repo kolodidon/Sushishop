@@ -6,6 +6,7 @@ const SushiBlock: React.FC<SushiBlockType> = ({ id, imageUrl, name, types, quant
     const [currentType, setCurrentType] = useState(types[0])
     const [currentQuantity, setCurrentQuantity] = useState(0)
     const localTypes = ['традиционный', 'большой']
+
     return (
         <div className="sushi-block">
             <img

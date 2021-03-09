@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route } from 'react-router'
-import { useDispatch } from 'react-redux'
 
 import './scss/app.scss'
 
@@ -10,9 +9,7 @@ import { FetchSushiThunk } from './redux/sushiSlice'
 
 
 const App: React.FC = () => {
-
-  const dispatch = useDispatch()
-  useEffect(() => { dispatch(FetchSushiThunk()) }, [dispatch])
+  
   //@ts-ignore
   window.test = () => { dispatch(FetchSushiThunk()) }
 
