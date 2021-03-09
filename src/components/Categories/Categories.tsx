@@ -8,7 +8,9 @@ type CategoriesPropsType = {
 
 const Categories: React.FC<CategoriesPropsType> = ({ items }) => {
     const dispatch = useDispatch()
-    const ActiveItem: number  = useSelector(categorySelector)
+    const ActiveItem: number = useSelector(categorySelector)
+    console.log('Categories rerendered!')
+
     return (
         <div className="categories">
             <ul>

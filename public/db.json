@@ -1,0 +1,155 @@
+{
+    "sushi": [
+        {
+            "category": 0,
+            "id": 0,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17669/roll-arigato-kv.jpg/1592157186/656x656.webp",
+            "name": "Аригато",
+            "price": 10,
+            "quantity": [
+                5,
+                10,
+                15
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 0,
+            "id": 1,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/391/kaliforniya-kv.jpg/1592157121/656x656.webp",
+            "name": "Калифорния",
+            "price": 12,
+            "quantity": [
+                7,
+                14,
+                21
+            ],
+            "rating": 4,
+            "types": [
+                null,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 2,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/401/vegetarianskij-roll-kv.jpg/1592157047/656x656.webp",
+            "name": "Вегетерианский",
+            "price": 15,
+            "quantity": [
+                9,
+                18,
+                27
+            ],
+            "rating": 2,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 3,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/38480/sushi-kejk.jpg/1606803826/656x656.webp",
+            "name": "Суши-кейк",
+            "price": 20,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 3,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 4,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/38482/moca.jpg/1606805408/656x656.webp",
+            "name": "Мока",
+            "price": 14,
+            "quantity": [
+                5,
+                10,
+                15
+            ],
+            "rating": 4,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 5,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17680/fast-roll-krab-v-tempure-kv.jpg/1592160530/656x656.webp",
+            "name": "Фаст Краб в темпуре",
+            "price": 17,
+            "quantity": [
+                5,
+                10,
+                15
+            ],
+            "rating": 1,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 6,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/406/mini-roll-s-ogurcom-kv.jpg/1592160410/656x656.webp",
+            "name": "Мини-ролл с огурцом",
+            "price": 10,
+            "quantity": [
+                10,
+                20,
+                30
+            ],
+            "rating": 3,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 7,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17683/fast-roll-s-kuricej.jpg/1592160621/656x656.webp",
+            "name": "Фаст Ролл с курицей",
+            "price": 25,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 4,
+            "types": [
+                0,
+                1
+            ]
+        },
+        {
+            "category": 0,
+            "id": 8,
+            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/52/sushi-s-ugrem-kv.jpg/1592161623/656x656.webp",
+            "name": "Суши с угрём",
+            "price": 33,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        }
+    ]
+}

@@ -5,14 +5,12 @@ import { sortBySelector, setSortBy } from '../../redux/filterSlice'
 import SortArrow from '../../assets/img/sort-arrow.svg'
 
 type SortPropsType = {
-    items: Array<{name: string, type: string}>
+    items: Array<{ name: string, type: string }>
 }
 
 const Sort: React.FC<SortPropsType> = ({ items }) => {
-
     const dispatch = useDispatch()
     const ActiveItem: string = useSelector(sortBySelector)
-
     const [isPopup, setPopup] = useState(false)
     const sortRef = useRef<HTMLDivElement>(null)
     const setActiveItemAndClosePopup = (type: string) => {
@@ -28,10 +26,12 @@ const Sort: React.FC<SortPropsType> = ({ items }) => {
     useEffect(() => {
         document.body.addEventListener('click', handleClick)
     }, [])
+    console.log('Sort rerendered!')
+
     return (
         <div className="sort" ref={sortRef}>
             <div className="sort__label" onClick={() => setPopup(!isPopup)}>
-                <img src={SortArrow} alt="Arrow" className={!isPopup ? 'rotated' : ''}/>
+                <img src={SortArrow} alt="Arrow" className={!isPopup ? 'rotated' : ''} />
                 <b>Сортировка по:</b>
                 <span>{items.find((e) => e.type === ActiveItem)?.name}</span>
             </div>

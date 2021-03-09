@@ -11,7 +11,7 @@ export type SushiBlockType = {
 export type SushiType = Array<SushiBlockType>
 
 export function FetchSushi(): Promise<SushiType> {
-    return fetch('https://sushishop-f49ef-default-rtdb.firebaseio.com/sushi.json')
+    return fetch('http://localhost:3001/sushi')
         .then(response => {
             if (!response.ok) {
               throw new Error(response.statusText)
