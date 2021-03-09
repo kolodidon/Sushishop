@@ -10,13 +10,19 @@ export type SushiBlockType = {
 }
 export type SushiType = Array<SushiBlockType>
 
-export function FetchSushi(): Promise<SushiType> {
-    return fetch('http://localhost:3001/sushi')
+export function FetchSushi(category: number): Promise<SushiType> {
+    let request = ''
+    if (category === 0) {
+        request = `http://localhost:3001/sushi`
+    } else {
+        request = `http://localhost:3001/sushi?category=${category}`
+    }
+    return fetch(request)
         .then(response => {
             if (!response.ok) {
-              throw new Error(response.statusText)
+                throw new Error(response.statusText)
             }
             return response.json()
                 .then(data => data as SushiType)
-          })
+        })
 }

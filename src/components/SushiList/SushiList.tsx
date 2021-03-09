@@ -1,14 +1,17 @@
 import React from 'react'
 import { SushiBlock, SushiPlaceholder } from '../'
 import { SushiStateType, sushiSelector, FetchSushiThunk } from '../../redux/sushiSlice'
+import { categorySelector, sortBySelector } from '../../redux/sushiSlice'
 import { useSelector, useDispatch } from 'react-redux'
 
 const SushiList = () => {
     const dispatch = useDispatch()
     const { items, isLoading, error }: SushiStateType = useSelector(sushiSelector)
+    const category: number = useSelector(categorySelector)
+    const sortBy: string = useSelector(sortBySelector)
     React.useEffect(() => {
-        if (items.length == 0) { dispatch(FetchSushiThunk()) }
-    }, [dispatch])
+        dispatch(FetchSushiThunk(category))
+    }, [category, sortBy])
     console.log('SushiList rerendered!')
 
     return (

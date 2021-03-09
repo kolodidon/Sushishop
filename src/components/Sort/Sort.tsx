@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { sortBySelector, setSortBy } from '../../redux/filterSlice'
+import { sortBySelector, setSortBy } from '../../redux/sushiSlice'
 
 import SortArrow from '../../assets/img/sort-arrow.svg'
 

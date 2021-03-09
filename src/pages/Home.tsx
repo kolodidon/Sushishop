@@ -1,8 +1,8 @@
 import React from 'react'
-import { Categories, Sort, SushiList } from '../components'
+import { Categories, Sort, SushiList, SushiHeader } from '../components'
 
 const Home: React.FC = () => {
-    const categoryItems = ['Все', 'Мясные', 'Вегетерианские', 'Гриль', 'Острые', 'Закрытые']
+    const categoryItems = ['Все', 'Рыбные', 'Вегетерианские', 'Гриль', 'Острые', 'Закрытые']
     const sortItems = [{ name: 'популярности', type: 'popular' }, { name: 'цене', type: 'price' }, { name: 'алфавиту', type: 'alphabet' }]
     console.log ('Home rerendered!')
 
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
                 <Categories items={categoryItems} />
                 <Sort items={sortItems} />
             </div>
-            <h2 className="content__title">Все суши и роллы</h2>
+            <SushiHeader items={categoryItems}/>
             <SushiList />
         </div>
     )

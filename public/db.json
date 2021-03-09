@@ -1,7 +1,7 @@
 {
     "sushi": [
         {
-            "category": 0,
+            "category": 1,
             "id": 0,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17669/roll-arigato-kv.jpg/1592157186/656x656.webp",
             "name": "Аригато",
@@ -17,7 +17,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 1,
             "id": 1,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/391/kaliforniya-kv.jpg/1592157121/656x656.webp",
             "name": "Калифорния",
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 2,
             "id": 2,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/401/vegetarianskij-roll-kv.jpg/1592157047/656x656.webp",
             "name": "Вегетерианский",
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 4,
             "id": 3,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/38480/sushi-kejk.jpg/1606803826/656x656.webp",
             "name": "Суши-кейк",
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 1,
             "id": 4,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/38482/moca.jpg/1606805408/656x656.webp",
             "name": "Мока",
@@ -85,7 +85,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 3,
             "id": 5,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17680/fast-roll-krab-v-tempure-kv.jpg/1592160530/656x656.webp",
             "name": "Фаст Краб в темпуре",
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 2,
             "id": 6,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/406/mini-roll-s-ogurcom-kv.jpg/1592160410/656x656.webp",
             "name": "Мини-ролл с огурцом",
@@ -119,7 +119,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 4,
             "id": 7,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/17683/fast-roll-s-kuricej.jpg/1592160621/656x656.webp",
             "name": "Фаст Ролл с курицей",
@@ -136,7 +136,7 @@
             ]
         },
         {
-            "category": 0,
+            "category": 1,
             "id": 8,
             "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/52/sushi-s-ugrem-kv.jpg/1592161623/656x656.webp",
             "name": "Суши с угрём",

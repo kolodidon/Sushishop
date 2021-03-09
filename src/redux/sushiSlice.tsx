@@ -5,13 +5,15 @@ import { RootState } from './rootReducer'
 export type SushiStateType = {
     items: SushiType,
     isLoading: boolean,
-    error: string
+    error: string,
+    category: number,
+    sortBy: string
 }
 
 export const FetchSushiThunk = createAsyncThunk(
     'fetchSushi',
-    async (thunkAPI) => {
-        const response = await FetchSushi()
+    async (category: number, thunkAPI) => {
+        const response = await FetchSushi(category)
         return response
     }
 )
@@ -19,14 +21,21 @@ export const FetchSushiThunk = createAsyncThunk(
 export const initialState: SushiStateType = {
     items: [],
     isLoading: false,
-    error: ''
+    error: '',
+    category: 0,
+    sortBy: 'popular'
 }
 
 const sushiSlice = createSlice({
     name: 'sushi',
     initialState,
     reducers: {
-
+        setSortBy(state, action: PayloadAction<string>) {
+            state.sortBy = action.payload
+        },
+        setCategory(state, action: PayloadAction<number>) {
+            state.category = action.payload
+        }
     },
     extraReducers: builder => {
         builder.addCase(FetchSushiThunk.pending, (state) => {
@@ -37,12 +46,14 @@ const sushiSlice = createSlice({
             state.items = action.payload
         })
         builder.addCase(FetchSushiThunk.rejected, (state) => {
-            state.isLoading = false 
+            state.isLoading = false  
             state.error = 'Ошибка!'
         })
     }
 })
 
-export const {} = sushiSlice.actions
+export const { setSortBy, setCategory } = sushiSlice.actions
 export const sushiSelector = (state: RootState) => state.sushi
+export const categorySelector = (state: RootState) => state.sushi.category
+export const sortBySelector = (state: RootState) => state.sushi.sortBy
 export default sushiSlice

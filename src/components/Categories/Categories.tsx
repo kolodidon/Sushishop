@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { categorySelector, setCategory } from '../../redux/filterSlice'
+import { categorySelector, setCategory } from '../../redux/sushiSlice'
 
-type CategoriesPropsType = {
+export type CategoriesPropsType = {
     items: Array<string>
 }
 
