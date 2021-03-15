@@ -10,6 +10,7 @@ const SushiPlaceholder = () => {
             viewBox="0 0 280 460"
             backgroundColor="#f3f3f3"
             foregroundColor="#ecebeb"
+            className="sushi-block"
         >
             <circle cx="140" cy="160" r="140" />
             <rect x="128" y="319" rx="0" ry="0" width="0" height="1" />

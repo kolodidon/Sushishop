@@ -60,16 +60,26 @@
     span {
       color: $orange;
     }
-
+ 
     svg {
       path {
         fill: $orange;
       }
     }
 
+    &:disabled {
+      background-color: #fff;
+      border-color: #777;
+      svg {
+        path {
+          fill: #777;
+        }
+      }
+    }
+
     &:hover {
       background-color: $orange;
-
+      border-color: $orange;
       &,
       span {
         color: #fff;
@@ -85,6 +95,7 @@
     &:active {
       background-color: darken($orange, 8%);
     }
+    &:disabled{pointer-events:none}
   }
 
   &__delimiter {

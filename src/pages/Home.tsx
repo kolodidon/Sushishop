@@ -3,7 +3,7 @@ import { Categories, Sort, SushiList, SushiHeader } from '../components'
 
 const Home: React.FC = () => {
     const categoryItems = ['Все', 'Рыбные', 'Вегетерианские', 'Гриль', 'Острые', 'Закрытые']
-    const sortItems = [{ name: 'популярности', type: 'popular' }, { name: 'цене', type: 'price' }, { name: 'алфавиту', type: 'alphabet' }]
+    const sortItems = [{ name: 'популярности', type: 'rating' }, { name: 'цене', type: 'price' }, { name: 'алфавиту', type: 'name' }]
     console.log ('Home rerendered!')
 
     return (

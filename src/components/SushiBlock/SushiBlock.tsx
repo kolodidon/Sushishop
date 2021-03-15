@@ -1,12 +1,34 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 
-import { SushiBlockType } from '../../Api'
+export type SushiBlockPropsType = {
+    id: number
+    imageUrl: string
+    name: string
+    types: Array<number>
+    quantity: Array<number>
+    price: number
+    category: number
+    rating: number
+    onAddSushi: (obj: any) => void
+}
 
-const SushiBlock: React.FC<SushiBlockType> = ({ id, imageUrl, name, types, quantity, price, category, rating }) => {
-    const [currentType, setCurrentType] = useState(types[0])
+const SushiBlock: React.FC<SushiBlockPropsType> = ({ id, imageUrl, name, types, quantity, price, category, rating, onAddSushi }) => {
+    let initialType = (types.includes(0)) ?  0 : 1
+    const [currentType, setCurrentType] = useState(initialType)
     const [currentQuantity, setCurrentQuantity] = useState(0)
+    const [addedQuantity, setAddedQuantity] = useState(0)
+    const onAddSushiFinal = (obj: any) => {
+        setAddedQuantity(addedQuantity + 1)
+        onAddSushi(obj)
+    }
     const localTypes = ['традиционный', 'большой']
-
+    let totalPrice = 0;
+    (currentType === 0)
+        ? totalPrice = price * quantity[currentQuantity]
+        : totalPrice = Math.ceil(price * quantity[currentQuantity] * 1.5)
+    const dispatch = useDispatch()
+    console.log(`SushiBlock #${id} rerendered!`)
     return (
         <div className="sushi-block">
             <img
@@ -46,11 +68,18 @@ const SushiBlock: React.FC<SushiBlockType> = ({ id, imageUrl, name, types, quant
             </div>
             <div className="sushi-block__bottom">
                 <div className="sushi-block__price">
-                    от {(currentType === 0) ? price * quantity[currentQuantity] : Math.ceil(price * quantity[currentQuantity] * 1.5)} ₽
+                    от {totalPrice} ₽
                 </div>
-                <div className="button button--outline button--add">
+                <div 
+                    className="button button--outline button--add" 
+                    onClick={() => onAddSushiFinal( { id, imageUrl, name, type: localTypes[currentType], quantity: quantity[currentQuantity], totalPrice, addedQuantity} )}
+                >
                     <span>Добавить</span>
-                    <i>2</i>
+                    {
+                        addedQuantity
+                            ? <i>{addedQuantity}</i>
+                            : null
+                    }
                 </div>
             </div>
         </div>

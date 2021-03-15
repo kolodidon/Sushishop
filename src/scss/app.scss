@@ -27,7 +27,7 @@ body {
   &__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   &__top {
@@ -122,6 +122,7 @@ body {
       img {
         width: 80px;
         height: 80px;
+        border-radius: 50%;
       }
     }
 
@@ -183,14 +184,16 @@ body {
       width: 4%;
 
       .button {
-        border-color: darken($color: $gray-line, $amount: 10);
+        //border-color: darken($color: $gray-line, $amount: 10);
+        border-color: red;
       }
 
       svg {
         transform: rotate(45deg);
 
         path {
-          fill: darken($color: $gray-line, $amount: 15);
+          //fill: darken($color: $gray-line, $amount: 15);
+          fill: red;
         }
       }
 
@@ -202,8 +205,10 @@ body {
         }
         &:hover,
         &:active {
-          border-color: darken($color: $gray-line, $amount: 80);
-          background-color: darken($color: $gray-line, $amount: 80);
+          //border-color: darken($color: $gray-line, $amount: 80);
+          border-color: white;
+          //background-color: darken($color: $gray-line, $amount: 80);
+          background-color: red;
         }
       }
     }
@@ -247,11 +252,14 @@ body {
         }
 
         &:hover {
-          background-color: darken($color: $gray-line, $amount: 90);
-          border-color: darken($color: $gray-line, $amount: 90);
+          //background-color: darken($color: $gray-line, $amount: 90);
+          //border-color: darken($color: $gray-line, $amount: 90);
+          border-color: #00A5E0;
+          background-color: #00A5E0;
 
           span {
-            color: $gray-line;
+            //color: $gray-line;
+            color: #ffffff;
           }
         }
 

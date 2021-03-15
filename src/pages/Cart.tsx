@@ -1,9 +1,13 @@
 import React from 'react'
+import { CartList } from '../components'
 
 const Cart: React.FC = () => {
+    console.log('Cart rerendered!')
     return (
-        <div>
-            <h1>Тут будет корзина!</h1>
+        <div className="container container--cart">
+            <div className="cart">
+                <CartList/>
+            </div>
         </div>
     )
 }

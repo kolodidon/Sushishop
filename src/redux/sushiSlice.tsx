@@ -12,8 +12,8 @@ export type SushiStateType = {
 
 export const FetchSushiThunk = createAsyncThunk(
     'fetchSushi',
-    async (category: number, thunkAPI) => {
-        const response = await FetchSushi(category)
+    async ({category, sortBy}: {category: number, sortBy: string}, thunkAPI) => {
+        const response = await FetchSushi(category, sortBy)
         return response
     }
 )
@@ -23,7 +23,7 @@ export const initialState: SushiStateType = {
     isLoading: false,
     error: '',
     category: 0,
-    sortBy: 'popular'
+    sortBy: 'rating'
 }
 
 const sushiSlice = createSlice({
