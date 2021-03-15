@@ -3,7 +3,7 @@
         {
             "category": 1,
             "id": 0,
-            "imageUrl": "/images/Arigato.webp",
+            "imageUrl": "/images/656x656 (4).webp",
             "name": "Аригато",
             "price": 10,
             "quantity": [
@@ -19,7 +19,7 @@
         {
             "category": 1,
             "id": 1,
-            "imageUrl": "/images/Kalifornia.webp",
+            "imageUrl": "/images/656x656 (12).webp",
             "name": "Калифорния",
             "price": 12,
             "quantity": [
@@ -34,9 +34,9 @@
             ]
         },
         {
-            "category": 2,
+            "category": 1,
             "id": 2,
-            "imageUrl": "/images/Vegetarian.webp",
+            "imageUrl": "/images/656x656 (6).webp",
             "name": "Вегетерианский",
             "price": 15,
             "quantity": [
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "category": 4,
+            "category": 1,
             "id": 3,
             "imageUrl": "/images/Sushi-cake.webp",
             "name": "Суши-кейк",
@@ -87,7 +87,7 @@
         {
             "category": 3,
             "id": 5,
-            "imageUrl": "/images/Fast-crab.webp",
+            "imageUrl": "/images/656x656 (29).webp",
             "name": "Фаст Краб в темпуре",
             "price": 17,
             "quantity": [
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "category": 2,
+            "category": 1,
             "id": 6,
             "imageUrl": "/images/Cucumber-roll.webp",
             "name": "Мини-ролл с огурцом",
@@ -119,26 +119,9 @@
             ]
         },
         {
-            "category": 4,
-            "id": 7,
-            "imageUrl": "/images/Fast-chicken.webp",
-            "name": "Фаст Ролл с курицей",
-            "price": 25,
-            "quantity": [
-                6,
-                12,
-                18
-            ],
-            "rating": 4,
-            "types": [
-                0,
-                1
-            ]
-        },
-        {
             "category": 1,
             "id": 8,
-            "imageUrl": "/images/Fast-chicken.webp",
+            "imageUrl": "/images/656x656 (55).webp",
             "name": "Суши с угрём",
             "price": 33,
             "quantity": [
@@ -147,6 +130,918 @@
                 9
             ],
             "rating": 99,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 1,
+            "id": 9,
+            "imageUrl": "/images/656x656 (15).webp",
+            "name": "С тигровой креветкой",
+            "price": 13,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 3,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 10,
+            "imageUrl": "/images/656x656 (5).webp",
+            "name": "Гуакамоле ролл",
+            "price": 25,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 1,
+            "id": 11,
+            "imageUrl": "/images/656x656 (11).webp",
+            "name": "Опаленный с лососем",
+            "price": 40,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 5,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 12,
+            "imageUrl": "/images/656x656 (5).webp",
+            "name": "Оранж ролл",
+            "price": 15,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 13,
+            "imageUrl": "/images/656x656 (17).webp",
+            "name": "Ролл с угрём и Чукой",
+            "price": 43,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 14,
+            "imageUrl": "/images/656x656 (10).webp",
+            "name": "Филадельфия от Шефа",
+            "price": 18,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 4,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 15,
+            "imageUrl": "/images/656x656 (7).webp",
+            "name": "Калифорния с лососем",
+            "price": 27,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 1,
+            "id": 16,
+            "imageUrl": "/images/656x656 (13).webp",
+            "name": "Филадельфия",
+            "price": 15,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 17,
+            "imageUrl": "/images/656x656 (8).webp",
+            "name": "Филадельфия Роял",
+            "price": 22,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 4,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 18,
+            "imageUrl": "/images/656x656 (14).webp",
+            "name": "Филадельфия в угре",
+            "price": 28,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 19,
+            "imageUrl": "/images/656x656 (2).webp",
+            "name": "Филадельфия микс",
+            "price": 23,
+            "quantity": [
+                6,
+                12,
+                18
+            ],
+            "rating": 4,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 20,
+            "imageUrl": "/images/656x656 (19).webp",
+            "name": "Чикен спайс",
+            "price": 12,
+            "quantity": [
+                7,
+                14,
+                21
+            ],
+            "rating": 2,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 21,
+            "imageUrl": "/images/656x656 (20).webp",
+            "name": "Снэк ролл",
+            "price": 12,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 22,
+            "imageUrl": "/images/656x656 (21).webp",
+            "name": "Запеченный с крабом",
+            "price": 35,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 2,
+            "id": 23,
+            "imageUrl": "/images/656x656 (22).webp",
+            "name": "Запеченный с лососем",
+            "price": 40,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 2,
+            "id": 24,
+            "imageUrl": "/images/656x656 (23).webp",
+            "name": "Запеченный с курицей",
+            "price": 20,
+            "quantity": [
+                5,
+                10,
+                15
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 25,
+            "imageUrl": "/images/656x656 (24).webp",
+            "name": "Запеченный с мидиями",
+            "price": 45,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 26,
+            "imageUrl": "/images/656x656 (25).webp",
+            "name": "Запеченный с окунем",
+            "price": 40,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 3,
+            "id": 27,
+            "imageUrl": "/images/656x656 (26).webp",
+            "name": "Темпура с лососем",
+            "price": 17,
+            "quantity": [
+                8,
+                16,
+                24
+            ],
+            "rating": 2,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 3,
+            "id": 28,
+            "imageUrl": "/images/656x656 (27).webp",
+            "name": "Темпура с тунцом",
+            "price": 28,
+            "quantity": [
+                5,
+                10,
+                15
+            ],
+            "rating": 4,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 3,
+            "id": 29,
+            "imageUrl": "/images/656x656 (28).webp",
+            "name": "Темпура с угрем и копченой курицей",
+            "price": 33,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 4,
+            "id": 30,
+            "imageUrl": "/images/656x656 (30).webp",
+            "name": "Фаст Овощной",
+            "price": 45,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 4,
+            "id": 31,
+            "imageUrl": "/images/656x656 (31).webp",
+            "name": "Фаст с тунцом",
+            "price": 45,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 4,
+            "id": 32,
+            "imageUrl": "/images/656x656 (32).webp",
+            "name": "Фаст с курицей",
+            "price": 33,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 4,
+            "id": 33,
+            "imageUrl": "/images/656x656 (33).webp",
+            "name": "Филадельфия фаст",
+            "price": 40,
+            "quantity": [
+                2,
+                4,
+                6
+            ],
+            "rating": 2,
+            "types": [
+                1
+            ]
+        },
+        {
+            "category": 5,
+            "id": 34,
+            "imageUrl": "/images/656x656 (34).webp",
+            "name": "Мини с огурцом",
+            "price": 13,
+            "quantity": [
+                8,
+                16,
+                24
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 5,
+            "id": 35,
+            "imageUrl": "/images/656x656 (35).webp",
+            "name": "Мини с авокадо",
+            "price": 10,
+            "quantity": [
+                8,
+                16,
+                24
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 5,
+            "id": 36,
+            "imageUrl": "/images/656x656 (36).webp",
+            "name": "Мини с лососем",
+            "price": 17,
+            "quantity": [
+                8,
+                16,
+                24
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 5,
+            "id": 37,
+            "imageUrl": "/images/656x656 (37).webp",
+            "name": "Мини с чукой",
+            "price": 13,
+            "quantity": [
+                8,
+                16,
+                24
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 1,
+            "id": 38,
+            "imageUrl": "/images/656x656 (56).webp",
+            "name": "Суши с лососем",
+            "price": 20,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 39,
+            "imageUrl": "/images/656x656 (57).webp",
+            "name": "Суши с тигровой креветкой",
+            "price": 23,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 2,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 40,
+            "imageUrl": "/images/656x656 (58).webp",
+            "name": "Суши с чукой",
+            "price": 15,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 1,
+            "id": 41,
+            "imageUrl": "/images/656x656 (3).webp",
+            "name": "Острые суши с тигровой креветкой",
+            "price": 25,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 42,
+            "imageUrl": "/images/656x656 (16).webp",
+            "name": "Острые суши с лососем",
+            "price": 25,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 5,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 43,
+            "imageUrl": "/images/656x656.webp",
+            "name": "Острые суши с угрем",
+            "price": 25,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 3,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 1,
+            "id": 44,
+            "imageUrl": "/images/656x656 (1).webp",
+            "name": "Острые суши с тунцом",
+            "price": 30,
+            "quantity": [
+                4,
+                8,
+                12
+            ],
+            "rating": 1,
+            "types": [
+                0, 1
+            ]
+        },
+        {
+            "category": 2,
+            "id": 45,
+            "imageUrl": "/images/656x656 (1).webp",
+            "name": "Запеченные суши с тунцом",
+            "price": 40,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 46,
+            "imageUrl": "/images/656x656 (1).webp",
+            "name": "Запеченные суши с тигровой креветкой",
+            "price": 43,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 47,
+            "imageUrl": "/images/656x656 (1).webp",
+            "name": "Запеченные суши с лососем",
+            "price": 39,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 2,
+            "id": 48,
+            "imageUrl": "/images/656x656 (1).webp",
+            "name": "Запеченные суши с угрем",
+            "price": 42,
+            "quantity": [
+                3,
+                6,
+                9
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 49,
+            "imageUrl": "/images/656x656 (38).webp",
+            "name": "Филадельфия Love",
+            "price": 999,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 49,
+            "imageUrl": "/images/656x656 (39).webp",
+            "name": "Филадельфия Кинг Сайз",
+            "price": 1111,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 50,
+            "imageUrl": "/images/656x656 (40).webp",
+            "name": "Суши Шок",
+            "price": 478,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 51,
+            "imageUrl": "/images/656x656 (41).webp",
+            "name": "Кинг Сайз с угрём",
+            "price": 478,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 52,
+            "imageUrl": "/images/656x656 (42).webp",
+            "name": "XXL",
+            "price": 865,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 1,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 53,
+            "imageUrl": "/images/656x656 (43).webp",
+            "name": "Суши Шок Премиум",
+            "price": 615,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 54,
+            "imageUrl": "/images/656x656 (44).webp",
+            "name": "Калифорникейшн",
+            "price": 505,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 55,
+            "imageUrl": "/images/656x656 (45).webp",
+            "name": "Джентльменский",
+            "price": 855,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 56,
+            "imageUrl": "/images/656x656 (46).webp",
+            "name": "Суши Шок Классик",
+            "price": 605,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 57,
+            "imageUrl": "/images/656x656 (47).webp",
+            "name": "Филадельфия мания",
+            "price": 735,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 57,
+            "imageUrl": "/images/656x656 (48).webp",
+            "name": "Запеченный Калифорникейшн",
+            "price": 645,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 58,
+            "imageUrl": "/images/656x656 (49).webp",
+            "name": "Четыре сезона",
+            "price": 659,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 3,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 59,
+            "imageUrl": "/images/656x656 (50).webp",
+            "name": "Запечённый",
+            "price": 329,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 60,
+            "imageUrl": "/images/656x656 (51).webp",
+            "name": "Большой запечённый",
+            "price": 895,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 2,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 61,
+            "imageUrl": "/images/656x656 (52).webp",
+            "name": "Темпура",
+            "price": 679,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 4,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 62,
+            "imageUrl": "/images/656x656 (53).webp",
+            "name": "Нежный краб",
+            "price": 352,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 5,
+            "types": [
+                0
+            ]
+        },
+        {
+            "category": 6,
+            "id": 63,
+            "imageUrl": "/images/656x656 (54).webp",
+            "name": "Подарочный",
+            "price": 555,
+            "quantity": [
+                1,
+                1,
+                1
+            ],
+            "rating": 4,
             "types": [
                 0
             ]
