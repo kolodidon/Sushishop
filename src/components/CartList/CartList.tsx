@@ -6,6 +6,7 @@ import { itemsSelector, totalPriceSelector, totalCountSelector, plusTotalPrice, 
 import { ReactComponent as ToLeftArrow } from '../../assets/img/grey-arrow-left.svg'
 import { ReactComponent as CartLogo } from '../../assets/img/cart-cart.svg'
 import { ReactComponent as TrashLogo } from '../../assets/img/trash-logo.svg'
+import EmptyCart from '../EmptyCart/EmptyCart'
 
 
 
@@ -23,7 +24,7 @@ const CartList = () => {
     const dispatchSetCartItemAddedQuantity = (orderId: number, addedQuantity: number) => {dispatch(setCartItemAddedQuantity({orderId, addedQuantity}))}
     
 
-    if (Object.keys(items).length !== 0) {
+    if (items.length !== 0) {
         return (
             <>
                 <div className="cart__top">
@@ -71,7 +72,7 @@ const CartList = () => {
             </>
         )
     } else {
-        return <h1>В корзине нет товаров! :(</h1>
+        return <EmptyCart/>
     }
 }
 

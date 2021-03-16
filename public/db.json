@@ -792,7 +792,7 @@
         },
         {
             "category": 6,
-            "id": 49,
+            "id": 50,
             "imageUrl": "/images/656x656 (39).webp",
             "name": "Филадельфия Кинг Сайз",
             "price": 1111,
@@ -808,7 +808,7 @@
         },
         {
             "category": 6,
-            "id": 50,
+            "id": 51,
             "imageUrl": "/images/656x656 (40).webp",
             "name": "Суши Шок",
             "price": 478,
@@ -824,7 +824,7 @@
         },
         {
             "category": 6,
-            "id": 51,
+            "id": 52,
             "imageUrl": "/images/656x656 (41).webp",
             "name": "Кинг Сайз с угрём",
             "price": 478,
@@ -840,7 +840,7 @@
         },
         {
             "category": 6,
-            "id": 52,
+            "id": 53,
             "imageUrl": "/images/656x656 (42).webp",
             "name": "XXL",
             "price": 865,
@@ -856,7 +856,7 @@
         },
         {
             "category": 6,
-            "id": 53,
+            "id": 54,
             "imageUrl": "/images/656x656 (43).webp",
             "name": "Суши Шок Премиум",
             "price": 615,
@@ -872,7 +872,7 @@
         },
         {
             "category": 6,
-            "id": 54,
+            "id": 55,
             "imageUrl": "/images/656x656 (44).webp",
             "name": "Калифорникейшн",
             "price": 505,
@@ -888,7 +888,7 @@
         },
         {
             "category": 6,
-            "id": 55,
+            "id": 56,
             "imageUrl": "/images/656x656 (45).webp",
             "name": "Джентльменский",
             "price": 855,
@@ -904,7 +904,7 @@
         },
         {
             "category": 6,
-            "id": 56,
+            "id": 57,
             "imageUrl": "/images/656x656 (46).webp",
             "name": "Суши Шок Классик",
             "price": 605,
@@ -920,7 +920,7 @@
         },
         {
             "category": 6,
-            "id": 57,
+            "id": 58,
             "imageUrl": "/images/656x656 (47).webp",
             "name": "Филадельфия мания",
             "price": 735,
@@ -936,7 +936,7 @@
         },
         {
             "category": 6,
-            "id": 57,
+            "id": 59,
             "imageUrl": "/images/656x656 (48).webp",
             "name": "Запеченный Калифорникейшн",
             "price": 645,
@@ -952,7 +952,7 @@
         },
         {
             "category": 6,
-            "id": 58,
+            "id": 60,
             "imageUrl": "/images/656x656 (49).webp",
             "name": "Четыре сезона",
             "price": 659,
@@ -968,7 +968,7 @@
         },
         {
             "category": 6,
-            "id": 59,
+            "id": 61,
             "imageUrl": "/images/656x656 (50).webp",
             "name": "Запечённый",
             "price": 329,
@@ -984,7 +984,7 @@
         },
         {
             "category": 6,
-            "id": 60,
+            "id": 62,
             "imageUrl": "/images/656x656 (51).webp",
             "name": "Большой запечённый",
             "price": 895,
@@ -1000,7 +1000,7 @@
         },
         {
             "category": 6,
-            "id": 61,
+            "id": 63,
             "imageUrl": "/images/656x656 (52).webp",
             "name": "Темпура",
             "price": 679,
@@ -1016,7 +1016,7 @@
         },
         {
             "category": 6,
-            "id": 62,
+            "id": 64,
             "imageUrl": "/images/656x656 (53).webp",
             "name": "Нежный краб",
             "price": 352,
@@ -1032,7 +1032,7 @@
         },
         {
             "category": 6,
-            "id": 63,
+            "id": 65,
             "imageUrl": "/images/656x656 (54).webp",
             "name": "Подарочный",
             "price": 555,

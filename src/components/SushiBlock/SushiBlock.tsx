@@ -56,7 +56,7 @@ const SushiBlock: React.FC<SushiBlockPropsType> = ({ id, imageUrl, name, types, 
                     {
                         quantity.map((item, index) => (
                             <li
-                                key={item}
+                                key={index}
                                 onClick={() => setCurrentQuantity(index)}
                                 className={(currentQuantity === index) ? 'active' : ''}
                             >

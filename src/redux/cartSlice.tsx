@@ -45,7 +45,7 @@ const cartSlice = createSlice({
         minusTotalCount(state, action: PayloadAction<number>) {
             state.totalCount = state.totalCount - action.payload
         },
-        addPizzaToCart(state, action: PayloadAction<itemsPayloadType>) {
+        addSushiToCart(state, action: PayloadAction<itemsPayloadType>) {
             const currentItems = current(state.items)
             const incomingItem = action.payload
             const existingItem = currentItems.filter((item: any) => deepEqual(item, incomingItem))
@@ -79,5 +79,5 @@ const cartSlice = createSlice({
 export const itemsSelector = (state: RootState) => state.cart.items
 export const totalPriceSelector = (state: RootState) => state.cart.totalPrice
 export const totalCountSelector = (state: RootState) => state.cart.totalCount
-export const { setTotalPrice, setTotalCount, addPizzaToCart, plusTotalPrice, minusTotalPrice, plusTotalCount, minusTotalCount, abortCart, abortCartItem, setCartItemAddedQuantity } = cartSlice.actions
+export const { setTotalPrice, setTotalCount, addSushiToCart, plusTotalPrice, minusTotalPrice, plusTotalCount, minusTotalCount, abortCart, abortCartItem, setCartItemAddedQuantity } = cartSlice.actions
 export default cartSlice

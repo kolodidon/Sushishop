@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { SushiBlock, SushiPlaceholder } from '../'
 import { SushiStateType, sushiSelector, FetchSushiThunk } from '../../redux/sushiSlice'
 import { categorySelector, sortBySelector } from '../../redux/sushiSlice'
-import { addPizzaToCart } from '../../redux/cartSlice'
+import { addSushiToCart } from '../../redux/cartSlice'
 import { useSelector, useDispatch } from 'react-redux'
 
 const SushiList = () => {
@@ -11,7 +11,7 @@ const SushiList = () => {
     const category: number = useSelector(categorySelector)
     const sortBy: string = useSelector(sortBySelector)
     const onAddSushi = useCallback((obj: any) => { 
-        dispatch(addPizzaToCart(obj)) 
+        dispatch(addSushiToCart(obj)) 
     }, [])
     React.useEffect(() => {
         dispatch(FetchSushiThunk({category, sortBy}))
