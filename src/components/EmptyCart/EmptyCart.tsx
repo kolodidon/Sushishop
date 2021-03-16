@@ -6,8 +6,8 @@ const EmptyCart = () => {
         <div className="cart cart--empty">
             <h2>Корзина пуста!</h2>
             <p>
-                Вероятней всего, вы ещё не выбрали суши.<br />
-                Для того, чтобы заказать суши, перейди на главную страницу.
+                Кажется, Вы ещё не выбрали суши.<br />
+                Для того, чтобы заказать суши, вернитесь на главную страницу.
             </p>
             <img src="/images/empty-cart.png" alt="Empty cart" />
             <Link to="/" className="button button--black">
