@@ -3,8 +3,9 @@
 
 ## Как это работает:
 1. [Каталог](#catalog)
-    1. [Категории](#categories)
-    2. [Сортировка](#sort)
+    1. [Список блюд](#list)
+    2. [Категории](#categories)
+    3. [Сортировка](#sort)
 3. [Корзина](#cart)
 
 ## TODO:
@@ -15,6 +16,65 @@
 На этой странице выводится список блюд, которые хранятся в формате .json локально (/public/db.json)
 Этот файл "хостится" фейковым json-сервером (библиотека json-server)
 
+#### Список блюд <a name="list"></a>
+Этот компонент выводит список блюд, получаемый запросом к json-серверу:
+```tsx
+const SushiList = () => {
+    const dispatch = useDispatch()
+    const { items, isLoading, error }: SushiStateType = useSelector(sushiSelector)
+    const category: number = useSelector(categorySelector)
+    const sortBy: string = useSelector(sortBySelector)
+    const onAddSushi = useCallback((obj: any) => { 
+        dispatch(addSushiToCart(obj)) 
+    }, [])
+    React.useEffect(() => {
+        dispatch(FetchSushiThunk({category, sortBy}))
+    }, [category, sortBy])
+    console.log('SushiList rerendered!')
+
+    return (
+        <div className="content__items">
+            {
+                (error)
+                    ? <h1>{error} Что-то пошло не так!</h1>
+                    : (isLoading)
+                        ? [...Array(12)].map((value, index: number) => <SushiPlaceholder key={index}/>)
+                        : items && items.map((item) => (<SushiBlock key={item.id} {...item} onAddSushi={onAddSushi}/>))
+            }
+        </div>
+    )
+}
+```
+Сам запрос выглядит вот так:
+```tsx
+export type SushiBlockType = {
+    id: number
+    imageUrl: string
+    name: string
+    types: Array<number>
+    quantity: Array<number>
+    price: number
+    category: number
+    rating: number
+}
+export type SushiType = Array<SushiBlockType>
+
+export function FetchSushi(category: number, sortBy: string): Promise<SushiType> {
+    console.log(`Request: category = ${category}, sortBy = ${sortBy}`)
+    return fetch(`/sushi?${(category === 0) ? '_' : `category=${category}&_`}sort=${sortBy}&_order=${(sortBy === 'name') ? 'asc' : 'desc'}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(response.statusText)
+            }
+            return response.json()
+                .then(data => data as SushiType)
+        })
+}
+```
+URL запроса выглядит весьма запутанным, но он сводится к трём параметрам:
+1. Категория (при наличии)
+2. Сортировка по признаку (при наличии)
+3. Порядок сортировки (при наличии сортировки)
 
 #### Категории <a name="categories"></a>
 Компонент выводит список категорий, к которым относятся блюда. 
